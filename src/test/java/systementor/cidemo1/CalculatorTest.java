@@ -35,7 +35,7 @@ class CalculatorTest {
     @Test
     void multiplyShouldReturn2() {
         int result = calculator.multiply(a,0);
-        assertEquals(2,result);
+        assertEquals(0,result);
     }
 
 
