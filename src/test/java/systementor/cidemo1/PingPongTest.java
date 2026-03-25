@@ -15,13 +15,13 @@ class PingPongTest {
 
     @Test
     void pingShouldReturnPongWhenInputIsPing() {
-        String result = pingPong.ping("ping ping ping");
-        assertEquals("pong", result);
+        String result = pingPong.ping("ping");
+        assertEquals("ping", result);
     }
 
     @Test
     void pingShouldReturnErrorMessageWhenInputIsNotPing() {
-        String result = pingPong.ping("hello");
+        String result = pingPong.ping("pong");
         assertEquals("You didn't say ping!", result);
     }
 
@@ -42,7 +42,7 @@ class PingPongTest {
     @Test
     void getPingCounterShouldReflectCorrectNumberOfPings() {
         pingPong.ping("ping");
-        pingPong.ping("ping"); // ska INTE öka counter
+        pingPong.ping("pong"); // ska INTE öka counter
         pingPong.ping("ping");
         assertEquals(2, pingPong.getPingCounter());
     }
