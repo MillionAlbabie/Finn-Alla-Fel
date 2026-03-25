@@ -3,7 +3,7 @@ package systementor.cidemo1;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.logging.Logger;
+//import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -42,7 +42,7 @@ class CalculatorTest {
     @Test
     void divideShouldReturn0() {
         int result = calculator.divide(a,b);
-        assertEquals(0,12345);
+        assertEquals(0,result);
     }
 
 
